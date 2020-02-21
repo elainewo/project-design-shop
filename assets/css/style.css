@@ -182,11 +182,77 @@ footer {
     font-size: .8rem;
 }
 
+
+@media (min-width: 1200px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    body{
+        background: violet;
+    }
+
+    header h1{
+        font-size: 1.2rem;
+        padding-top: .7%;
+        padding-left: 4%;
+    }
+
+    .gallery-shop {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        "fig-big fig-big"
+    }
+
+    .gallery-shop2 {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        "fig-big2 fig-big2"
+    }
+
+    .gallery-shop3 {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        "fig-big3 fig-big3"
+    }
+
+    .gallery-shop4 {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        "fig-big4 fig-big4"
+    }
+
+    .gallery-shop5 {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        "fig-big5 fig-big5"
+    }
+
+    #contact-info{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 25%;
+        padding-left: 12%;
+    }
+
+    footer{
+        padding-top: 10%;
+        padding-left: 11%;
+    }
+}
+
+
 @media (max-width: 576px) { 
 
     body{
         background: yellow;
-        /* max-width: 576px; */
     }
 
     header nav{
@@ -240,7 +306,6 @@ footer {
     .gallery-shop2 {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
         grid-template-areas: 
         "fig-big2"
     }
@@ -248,7 +313,6 @@ footer {
     .gallery-shop3 {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
         grid-template-areas: 
         "fig-big3"
     }
@@ -256,7 +320,6 @@ footer {
     .gallery-shop4 {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
         grid-template-areas: 
         "fig-big4"
     }
@@ -264,7 +327,6 @@ footer {
     .gallery-shop5 {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
         grid-template-areas: 
         "fig-big5"
     }
@@ -279,8 +341,5 @@ footer {
     }
 }
 
-@media (min-width: 1200px) {
-    .hamburger {
-        display: none;
-    }
-}
+
+
