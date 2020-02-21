@@ -158,6 +158,10 @@ figcaption {
     color: #323A45;
 }
 
+#contact-info a:hover{
+    text-decoration: underline;
+}
+
 .design-shop span{
     display: block;
 }
@@ -178,3 +182,105 @@ footer {
     font-size: .8rem;
 }
 
+@media (max-width: 576px) { 
+
+    body{
+        background: yellow;
+        /* max-width: 576px; */
+    }
+
+    header nav{
+        display: none;
+    }
+
+   header h1{
+       font-size: 1.3rem;
+       padding-top: 5%;
+       padding-left: 8.5%;
+   }
+
+    .hamburger{
+        padding-top: 8%;
+        padding-right: 10%;
+    }
+
+    label.hamburg { 
+        display: block;
+        background: #555; width: 42px; height: 40px; 
+        position: relative; 
+        margin-left: auto; margin-right: auto;
+        border-radius: 4px; 
+     }
+    
+    .line { 
+        position: absolute; 
+        left:7px;
+        height: 3px; 
+        width: 28px; 
+        background: #fff; 
+        border-radius: 2px;
+        display: block; 
+        transition: 0.5s; 
+        transform-origin: center; 
+     }
+     
+     .line:nth-child(1) { top: 8px; }
+     .line:nth-child(2) { top: 19px; }
+     .line:nth-child(3) { top: 30px; }
+     
+
+    .gallery-shop {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "fig-big"
+    }
+
+    .gallery-shop2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "fig-big2"
+    }
+
+    .gallery-shop3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "fig-big3"
+    }
+
+    .gallery-shop4 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "fig-big4"
+    }
+
+    .gallery-shop5 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "fig-big5"
+    }
+
+    #contact-info{
+        display: block;
+        padding-left: 16%;
+    }
+
+    footer{
+        padding-left: 15%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hamburger {
+        display: none;
+    }
+}
